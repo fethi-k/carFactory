@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "47bd755f-d96e-4d4e-8276-58813a3ff2a1",
+		"name": "examplePostmanCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/producecar?type=sedan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/producecar?type=sedan",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"producecar"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "sedan"
+						}
+					]
+				},
+				"description": "Produce for sedan car type."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/producecar?type=hatchback",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/producecar?type=hatchback",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"producecar"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "hatchback"
+						}
+					]
+				},
+				"description": "Produce for hatchback car type."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/producecar?type=cabrio",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/producecar?type=cabrio",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"producecar"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "cabrio"
+						}
+					]
+				},
+				"description": "Produce for cabrio car type."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/producecar?type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/producecar?type",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"producecar"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": null
+						}
+					]
+				},
+				"description": "Null input."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/producecar?type=",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/producecar?type=",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"producecar"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": ""
+						}
+					]
+				},
+				"description": "Empty input."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/producecar?type=cabrio&cabrio",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/producecar?type=cabrio&cabrio",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"producecar"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "cabrio"
+						},
+						{
+							"key": "cabrio",
+							"value": null
+						}
+					]
+				},
+				"description": "Invalid input."
+			},
+			"response": []
+		}
+	]
+}
